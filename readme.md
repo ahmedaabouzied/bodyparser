@@ -35,6 +35,11 @@ Now if you send a request with a JSON body as follows
 
 the server would respond with ``` My username ```
 
+## TODO 
+
+    * Add tests 
+    * Handle cases if body is not json
+
 ## Author
 
 [Ahmed Abouzied](https://www.github.com/ahmedaabouzied)

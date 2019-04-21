@@ -1,5 +1,5 @@
 // Parses json reqeust body
-package bodyParser
+package bodyparser
 
 import (
 	"encoding/json"
@@ -11,7 +11,7 @@ import (
 //
 // Returns a Map of String keys and Interface values
 //
-func JsonParse(r http.Response) (map[string]interface{}, error) {
+func JsonParse(r *http.Request) (map[string]interface{}, error) {
 	// Read the r.body into a byte array
 	body, err := ioutil.ReadAll(r.Body)
 	if err != nil {
